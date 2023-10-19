@@ -106,5 +106,5 @@ $.fn.isInViewport = function () {
   var viewportTop = $(window).scrollTop();
   var viewportBottom = viewportTop + $(window).height();
 
-  return elementBottom > viewportTop && elementTop + 500 < viewportBottom;
+  return elementTop - 500 < viewportTop && elementBottom > viewportTop && elementTop + 500 < viewportBottom;
 };
